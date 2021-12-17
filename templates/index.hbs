@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="/img/weather.png">
+        <link rel="stylesheet" type="text/css" href="/css/styles.css">
+    </head>
+    <body>
+        <div class="main">
+            <title>Weather app</title>
+            <h1>{{>header}}</h1>
+            <form method="get" target="/weather">
+                <input placeholder="Location" type="text" id="location-name">
+                <button>Submit</button>
+            </form>
+            <p id="result"></p>
+            <p>By {{name}}</p>
+        </div>
+        <p>{{>footer}}</p>
+        <script src="/js/script.js"></script>
+    </body>
+</html>
